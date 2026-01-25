@@ -1,0 +1,97 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: #d1d5db;
+}
+
+/* NAV */
+nav {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    font-weight: bold;
+    color: #1f4fd8;
+}
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    border-left: 4px solid #1f4fd8;
+    padding-left: 0.5rem;
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+/* PROJECT LINKS */
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #1f4fd8;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f2933;
+    color: #d1d5db;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
