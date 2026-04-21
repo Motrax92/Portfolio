@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Mohamed Traore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="top-header">
+    <div class="header-logo"><a href="index.html">MA8</a></div>
+    <nav class="top-nav">
+        <a href="index.html">ACCUEIL</a>
+        <a href="apropos.html">MISSION</a>
+        <a href="projets.html">GARAGE</a>
+        <a href="competences.html">DOJO</a>
+        <a href="contact.html" class="active">LINK</a>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1 class="giant-name" style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem;">Contact</h1>
+                <p class="contact-subtitle">Une idée ? Un projet ? Envoie-moi un message.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formspree.io/f/mvzdbnev" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" placeholder="jean.dupont@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" placeholder="Collaboration, Stage, etc." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Ton message ici..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem; cursor: pointer;">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <!-- Infos de contact -->
+                <div class="contact-details">
+                    <div class="detail-card">
+                        <h3>Direct</h3>
+                        <div class="detail-item">
+                            <span class="detail-icon">📧</span>
+                            <div class="detail-text">
+                                <strong>Email</strong>
+                                <a href="mailto:mohamed.traoreprofessionnel@gmail.com">mohamed.traoreprofessionnel@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📱</span>
+                            <div class="detail-text">
+                                <strong>Téléphone</strong>
+                                <a href="tel:+33605658632">06 05 65 86 32</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Réseaux</h3>
+                        <div class="detail-item">
+                            <span class="detail-icon">🔗</span>
+                            <div class="detail-text">
+                                <strong>GitHub</strong>
+                                <a href="https://github.com/Motrax92" target="_blank">Motrax92</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💼</span>
+                            <div class="detail-text">
+                                <strong>LinkedIn</strong>
+                                <a href="#">Mohamed Traore</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Disponible pour de nouvelles opportunités
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 – Portfolio – Tous droits réservés
+</footer>
+
+</body>
+</html>

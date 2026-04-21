@@ -4,81 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Prénom Nom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Prénom Nom</h1>
-    <p>Étudiant – Intéressé par la psychologie et le fonctionnement du cerveau</p>
+<header class="top-header">
+    <div class="header-logo"><a href="index.html">MA8</a></div>
+    <nav class="top-nav">
+        <a href="index.html" class="active">ACCUEIL</a>
+        <a href="apropos.html">MISSION</a>
+        <a href="projets.html">GARAGE</a>
+        <a href="competences.html">DOJO</a>
+        <a href="contact.html">LINK</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#apropos">À propos</a>
-    <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="#contact">Contact</a>
-</nav>
+<section id="accueil" class="hero">
+    <div class="header-content">
+        <h1 class="giant-name">Mohamed Traore</h1>
+        <div class="cta-container">
+            <a href="projets.html" class="btn-primary">Projets</a>
+            <a href="contact.html" class="btn-secondary">Contact</a>
+        </div>
+    </div>
+</section>
 
 <main>
 
-<section id="apropos">
-    <h2>À propos de moi</h2>
-    <div class="card">
-        <p>
-            Étudiant en terminale avec un fort intérêt pour la psychologie,
-            le comportement humain et l’analyse.
-            Mes projets scolaires et personnels m’aident à développer
-            rigueur, réflexion et compréhension de l’humain.
-        </p>
+<section id="apropos" class="section-container">
+    <div class="section-header">
+        <h2 class="section-title">À Propos</h2>
+        <span class="section-subtitle">Ma Mission & Vision</span>
     </div>
-</section>
-
-<section id="projets">
-    <h2>Projets</h2>
-
-    <!-- PROJET 1 -->
-    <div class="card">
-        <h3>Projet NSI – Simulation</h3>
-        <p>Projet interactif développé en NSI.</p>
-
-        <div class="project-links">
-            <a href="https://github.com/Motrax92/projet_red" target="_blank">
-                ▶️ Voir le projet en ligne
-            </a>
-            <a href="https://github.com/Motrax92/projet_red" target="_blank">
-                💻 Code GitHub
-            </a>
+    <div class="about-grid">
+        <div class="card about-main">
+            <h3>Analyse & Excellence</h3>
+            <p>
+                Ma démarche repose sur trois piliers : la <strong>Vitesse</strong> d'exécution, la <strong>Discrétion</strong> d'un code optimisé et la <strong>Stratégie</strong> pour répondre aux besoins utilisateurs. 
+                Passionné par l'informatique de haut niveau, je développe des solutions robustes et fluides.
+            </p>
+            <div class="cta-container" style="margin-top: 2rem;">
+                <a href="apropos.html" class="link-icon">En savoir plus sur ma mission →</a>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Années d'expérience</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Projets de finis</span>
+            </div>
         </div>
     </div>
-
 </section>
 
-<section id="competences">
-    <h2>Compétences</h2>
-    <div class="card">
-        <ul>
-            <li>Analyse logique et résolution de problèmes</li>
-            <li>Empathie et écoute</li>
-            <li>Travail en équipe</li>
-            <li>Programmation (NSI)</li>
-        </ul>
+<section id="projets" class="section-container">
+    <div class="section-header">
+        <h2 class="section-title">Projets</h2>
+        <span class="section-subtitle">Sélection de réalisations GitHub</span>
+    </div>
+
+    <div class="projects-grid">
+        <!-- PROJET 1: Groupie-Tracker -->
+        <div class="project-card">
+            <div class="project-img-placeholder">Groupie Tracker</div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">API</span>
+                </div>
+                <h3>Groupie-Tracker</h3>
+                <p>Application de suivi de groupes de musique utilisant des API externes, développée en Go.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Motrax92/Groupie-Tracker" target="_blank" class="link-icon">💻 Code GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJET 2: CleanMyWorkspace -->
+        <div class="project-card">
+            <div class="project-img-placeholder">Clean Workspace</div>
+            <div class="project-info">
+                <div class="project-tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">CLI</span>
+                </div>
+                <h3>CleanMyWorkspace</h3>
+                <p>Outil d'automatisation pour nettoyer et organiser vos dossiers de travail efficacement.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Motrax92/CleanMyWorkspace" target="_blank" class="link-icon">💻 Code GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-container" style="text-align: center; margin-top: 3rem;">
+        <a href="projets.html" class="btn-secondary">Voir tout le garage →</a>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email : prenom.nom@email.com</p>
-        <p>GitHub : github.com/tonpseudo</p>
+<section id="competences" class="section-container">
+    <div class="section-header">
+        <h2 class="section-title">Dojo Technique</h2>
+        <span class="section-subtitle">Stack logicielle & Hard Skills</span>
+    </div>
+    <div class="skills-wrapper">
+        <div class="skill-category">
+            <h4>Langages</h4>
+            <div class="skill-list">
+                <span class="badge-skill">Go</span>
+                <span class="badge-skill">Python</span>
+                <span class="badge-skill">JavaScript</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h4>Outils</h4>
+            <div class="skill-list">
+                <span class="badge-skill">Git / GitHub</span>
+                <span class="badge-skill">VS Code</span>
+            </div>
+        </div>
+    </div>
+    <div class="cta-container" style="margin-top: 3rem;">
+        <a href="competences.html" class="link-icon">Découvrir toute ma stack →</a>
+    </div>
+</section>
+
+<section id="contact" class="section-container">
+    <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <span class="section-subtitle">Disponible pour échanger</span>
+    </div>
+    <div class="contact-card card">
+        <div class="contact-info-grid">
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <div>
+                    <strong>Email</strong>
+                    <p>Mohamedsayd.traore@ynov.com</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                    <strong>Téléphone</strong>
+                    <p>07 49 16 51 52</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="icon">🔗</span>
+                <div>
+                    <strong>GitHub</strong>
+                    <p>github.com/Motrax92</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container" style="margin-top: 2rem; text-align: center;">
+            <a href="contact.html" class="btn-primary">Formulaire de contact détaillé</a>
+        </div>
     </div>
 </section>
 
 </main>
 
 <footer>
-    © 2026 – Portfolio de Prénom Nom
+    © 2026 – Portfolio – Tous droits réservés
 </footer>
 
 </body>
